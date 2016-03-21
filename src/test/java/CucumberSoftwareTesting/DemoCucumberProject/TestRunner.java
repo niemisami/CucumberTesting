@@ -8,6 +8,7 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		features = "Feature",
 		glue="stepDefinition",
+		format = { "pretty", "html:target/cucumber-html-report/foo" },
 		dryRun = false 			// Check if all the Steps have a Step definition in Test file
 		)
 
